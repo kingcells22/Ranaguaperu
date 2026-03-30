@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Trabajos | Ranagua</title>
+    <link rel="icon" type="image/png" href="/static/img/logo_ranagua1.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <header class="bg-white/90 sticky top-0 z-50 shadow-sm backdrop-blur-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-2">
+                <img src="/static/img/logo_ranagua2.png" alt="Ranagua Logo" class="h-10 md:h-12 w-auto">
+            </a>
+            <div class="hidden lg:flex space-x-8 font-semibold">
+                <a href="/" class="hover:text-green-600 transition">Inicio</a>
+                <a href="/nosotros.html" class="hover:text-green-600 transition">Nosotros</a>
+                <a href="/galeria.html" class="text-green-700 font-bold">Galería</a>
+                <a href="/catalogo.html" class="hover:text-green-600 transition">Productos</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-16 container mx-auto px-6">
+        <h1 class="text-4xl font-black text-center mb-12" data-aos="fade-down">Nuestros Proyectos en Campo</h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua1.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua1.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua2.jpg')" data-aos="zoom-in" data-aos-delay="100">
+                <img src="/static/img/ranagua2.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua3.jpg')" data-aos="zoom-in" data-aos-delay="200">
+                <img src="/static/img/ranagua3.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua4.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua4.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua5.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua5.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua6.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua6.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua7.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua7.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua8.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua8.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua9.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua9.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua10.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua10.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua11.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua11.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="overflow-hidden rounded-2xl shadow-lg h-72 group cursor-pointer" onclick="abrirLightbox('/static/img/ranagua12.jpg')" data-aos="zoom-in">
+                <img src="/static/img/ranagua12.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="fixed inset-0 z-[200] bg-black/95 hidden flex justify-center items-center opacity-0 transition-opacity duration-300" onclick="cerrarLightbox()">
+        <button class="absolute top-6 right-6 text-white hover:text-green-500 transition transform hover:scale-110" onclick="cerrarLightbox()">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <img id="lightbox-img" src="" class="max-w-[90%] max-h-[90vh] object-contain rounded-xl shadow-2xl scale-95 transition-transform duration-300">
+    </div>
+
+    <div class="fixed bottom-6 right-6 z-[100]">
+        <button id="chat-toggle" class="bg-green-600 hover:bg-green-700 text-white p-4 rounded-2xl shadow-2xl flex items-center gap-2 transition transform hover:scale-110 active:scale-95 shadow-green-900/20">
+            <i data-lucide="message-square" class="w-6 h-6 text-white"></i>
+            <span class="hidden sm:inline font-bold">¿Dudas técnicas?</span>
+        </button>
+
+        <div id="chat-window" class="hidden absolute bottom-20 right-0 w-[320px] md:w-[380px] bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col transition-all duration-300">
+            <div class="bg-green-800 p-4 text-white flex justify-between items-center shadow-lg">
+                <div class="flex items-center gap-3">
+                    <div class="relative">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-green-500">
+                            <img src="/static/img/logo_ranagua1.png" class="w-full h-full object-contain p-1">
+                        </div>
+                        <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-400 border-2 border-green-800 rounded-full animate-pulse"></div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Asistente Ranagua</h4>
+                        <p class="text-[10px] text-green-300 uppercase font-black tracking-tighter">Soporte IA 24/7</p>
+                    </div>
+                </div>
+                <button onclick="document.getElementById('chat-window').classList.add('hidden')" class="hover:bg-white/10 p-1 rounded-lg transition">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <div id="chat-content" class="h-80 overflow-y-auto p-4 space-y-4 bg-slate-50 text-sm">
+                <div class="bg-white p-3 rounded-2xl border border-slate-100 rounded-tl-none shadow-sm max-w-[85%] text-slate-700">
+                    ¡Hola! Soy el asistente técnico de Ranagua. ¿En qué podemos ayudarte con tu proyecto agrícola hoy?
+                </div>
+            </div>
+
+            <div class="p-4 bg-white border-t flex gap-2">
+                <input type="text" id="chat-input" placeholder="Escribe tu consulta..." class="flex-1 bg-slate-100 rounded-xl px-4 py-3 outline-none text-sm focus:ring-2 focus:ring-green-500 transition border-none text-slate-700">
+                <button onclick="sendMessage()" class="bg-green-600 text-white p-3 rounded-xl hover:bg-green-700 transition shadow-md shadow-green-900/10">
+                    <i data-lucide="send" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons(); 
+        AOS.init();
+
+        // --- LÓGICA DEL LIGHTBOX ---
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function abrirLightbox(src) {
+            lightboxImg.src = src;
+            lightbox.classList.remove('hidden');
+            // Retraso mínimo para que la transición de opacidad funcione
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
+            }, 10);
+        }
+
+        function cerrarLightbox() {
+            lightbox.classList.add('opacity-0');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
+            // Espera a que termine la animación para ocultarlo del todo
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightboxImg.src = '';
+            }, 300);
+        }
+
+        // Evento para cerrar con la tecla ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !lightbox.classList.contains('hidden')) {
+                cerrarLightbox();
+            }
+        });
+    </script>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>

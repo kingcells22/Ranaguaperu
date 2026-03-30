@@ -1,0 +1,28 @@
+{
+    "empresa": "Ranagua, representantes oficiales de Dayu Irrigation en el Perú",
+    "experiencia": "Llevamos más de 25 años liderando la innovación hídrica en el campo peruano. Somos los aliados estratégicos de Dayu Irrigation, la fábrica N° 1 de China, trayendo tecnología que realmente ahorra agua y aumenta la producción.",
+    "servicios": [
+        "Diseño e ingeniería hidráulica a medida para proyectos agrícolas de cualquier escala.",
+        "Instalación experta de sistemas de riego por goteo (especialistas en arándanos, uva y palto).",
+        "Sistemas de aspersión y microaspersión de alta resistencia para alfalfa y pastizales.",
+        "Automatización total: controla el riego de tu fundo desde tu smartphone.",
+        "Servicio técnico preventivo y correctivo de bombas, filtros y sistemas eléctricos."
+    ],
+    "productos_destacados": [
+        {
+            "nombre": "Cinta de Goteo Dayu Premium",
+            "descripcion": "Diseñada para resistir las condiciones más duras del campo peruano. Ofrece una entrega de agua 100% uniforme.",
+            "precio": "Cotización personalizada."
+        },
+        {
+            "nombre": "Aspersores de Impacto Dayu",
+            "descripcion": "Fabricados con materiales anti-UV. Perfectos para una cobertura total en cultivos de alfalfa.",
+            "precio": "Desde S/ 45 la unidad."
+        },
+        {
+            "nombre": "Sistemas de Fertirriego Inteligente",
+            "descripcion": "Inyectores y tanques que dosifican nutrientes con precisión quirúrgica.",
+            "precio": "Bajo evaluación técnica."
+        }
+    ]
+}
